@@ -140,44 +140,37 @@ public class MainActivity extends AppCompatActivity {
 
     //TODO: add links for illumination data display
     public void illumination6to9(View view){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
-        startActivity(intent);
+        launchWebsite("https://mozohack.github.io/aakashlabs/templates/l1.html");
     }
 
     public void illumination9to12(View view){
-        launchWebsite("www.google.com");
+        launchWebsite("https://mozohack.github.io/aakashlabs/templates/l2.html");
     }
 
     public void illumination12to3(View view){
-        launchWebsite("www.google.com");
+        launchWebsite("https://mozohack.github.io/aakashlabs/templates/l3.html");
     }
 
     public void illumination3to6(View view){
-        launchWebsite("www.google.com");
+        launchWebsite("https://mozohack.github.io/aakashlabs/templates/l4.html");
     }
 
     public void visualizePothole(View view){
-        launchWebsite("www.google.com");
+        launchWebsite("https://mozohack.github.io/aakashlabs/templates/pot.html");
     }
 
     public void noiseDay(View view){
-        launchWebsite("www.google.com");
+        launchWebsite("https://mozohack.github.io/aakashlabs/templates/day.html");
     }
 
     public void noiseNight(View view){
-        launchWebsite("www.google.com");
+        launchWebsite("https://mozohack.github.io/aakashlabs/templates/night.html");
     }
 
     public void launchWebsite(String url){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
     }
-
-    public void openWeb3(View view){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
-        startActivity(intent);
-    }
-
 
     public void illuminationImageCapture(View view){
         dispatchTakePictureIntent(ILLUMINATION);
