@@ -111,7 +111,8 @@
             <Button
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="Visualize"/>
+                android:text="Visualize"
+                android:onClick="visualizePothole"/>
 
             <View
                 android:layout_width="match_parent"
@@ -129,12 +130,14 @@
             <Button
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="Day"/>
+                android:text="Day"
+                android:onClick="noiseDay"/>
 
             <Button
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="Night"/>
+                android:text="Night"
+                android:onClick="noiseNight"/>
         </LinearLayout>
     </LinearLayout>
 
