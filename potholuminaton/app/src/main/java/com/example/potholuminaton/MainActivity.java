@@ -138,8 +138,38 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openWeb2(View view){
+    //TODO: add links for illumination data display
+    public void illumination6to9(View view){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+        startActivity(intent);
+    }
+
+    public void illumination9to12(View view){
+        launchWebsite("www.google.com");
+    }
+
+    public void illumination12to3(View view){
+        launchWebsite("www.google.com");
+    }
+
+    public void illumination3to6(View view){
+        launchWebsite("www.google.com");
+    }
+
+    public void visualizePothole(View view){
+        launchWebsite("www.google.com");
+    }
+
+    public void noiseDay(View view){
+        launchWebsite("www.google.com");
+    }
+
+    public void noiseNight(View view){
+        launchWebsite("www.google.com");
+    }
+
+    public void launchWebsite(String url){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
     }
 
